@@ -129,10 +129,10 @@ form .button input:hover{
     form .circal-form .category {
         width: 100%;
     }
-     /* .container form .card-details{
+    .container form .card-details{
         max-height: 300px;
         overflow: scroll; 
-    } */
+    }
     .card-details::_webkit-scrollbar{
             width: 0;
     }

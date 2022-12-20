@@ -130,7 +130,7 @@ form .button input:hover{
         width: 100%;
     }
     .container form .card-details{
-        max-height: 300px;
+        max-height: 400px;
         overflow: scroll; 
     }
     .card-details::_webkit-scrollbar{

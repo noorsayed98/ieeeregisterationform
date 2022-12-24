@@ -7,14 +7,66 @@
 body{
     color: aliceblue;
     display: flex;
-    height: 100vh;
+    height: 160vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #1e0941, #1A83D6);
     padding: 10px;
 }
+
+.btn{
+    text-align: center;
+}
+
+.link{
+  display: inline-block;
+  height: 25px;
+  width:15%;
+  background: #fff;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration:none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.link:hover{border: 1px solid #87deeb;
+    background: #4f7ebb;
+    transition: 1s;
+}
+.link a{
+    text-decoration: none;
+    color: red;
+}
+.link a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.Context{
+    text-align: Center;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 25px 30px;
+}
+.Context h1{
+    font-weight: 800;
+    text-align: center;
+}
+.Context h3{
+    font-weight: 100;
+    max-width: 950px;
+    text-align: center;
+}
+.Context .listed-item pre{
+    font-weight: 800;
+}
+
 .container{
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     padding: 25px 30px;
     border-radius: 25px;
@@ -24,13 +76,13 @@ body{
     font-size: 25px;
     font-weight: 500;
     position: relative;
-    text-align: center;
-    padding: 0 0 20px 0;
+    text-align: left;
+    padding: 0 0 20px 30px;
 }
 .container .heading::before{
     content: '';
     position: absolute;
-    height: 3px;
+    height: 5px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -118,10 +170,11 @@ form .button input:hover{
 }
 
 
-@media (max-width:584px){
+@media (max-width:550px){
     .container{
-        max-width: 100%;
+        width: 100%;
     }
+    
     form .card-details .card-box{
         margin-bottom: 15px;
         width: 100%;
@@ -130,11 +183,31 @@ form .button input:hover{
         width: 100%;
     }
     .container form .card-details{
-        max-height: 400px;
+        max-height: 800px;
         overflow: scroll; 
     }
     .card-details::_webkit-scrollbar{
             width: 0;
+    }
+    .Context{
+        max-height: 95%;
+        overflow: scroll;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .Context h1{
+        font-size:1.25 rem;
+    }
+    .link{
+        min-width: 35%;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:800px){
+    .link{
+        width:25%;
     }
 }
 

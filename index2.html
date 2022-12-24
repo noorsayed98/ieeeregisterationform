@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: aliceblue;
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e0941, #1A83D6);
+    padding: 10px;
+}
+.link{
+  display: inline-block;
+  height: 25px;
+  width:25%;
+  background: #fff;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration:none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.link:hover{border: 1px solid #87deeb;
+    background: #4f7ebb;
+    transition: 1s;
+}
+.link a{
+    text-decoration: none;
+    color: red;
+}
+.link a:visited{
+    text-decoration: none;
+    color: black;
+}
+.Context{
+    text-align: Center;
+    padding: 25px 30px;
+    position: relative;
+    max-width: 900px;
+}
+.Context h1{
+    font-weight: 800;
+}
+.Context h3{
+    font-weight: 100;
+    max-width: 950px;
+}
+.Context .listed-item pre{
+    font-weight: 800;
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #1A83D6, #1e0941);
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    padding: 0 0 20px 30px;
+}
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1b3b4d, #1eaaf0);
+}
+.container form .card-details{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-details .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff ;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.card-details .card-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ffffff ;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: aqua;
+}
+
+.card-details .card-box select:focus,
+.card-details .card-box select:valid{
+    border-color: aqua;
+}
+
+form .button{
+     text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #1e0941, #1A83D6);
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #1e0941, #1A83D6);
+}
+
+
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .circal-form .category {
+        width: 100%;
+    }
+    .container form .card-details{
+        max-height: 400px;
+        overflow: scroll; 
+    }
+    .card-details::_webkit-scrollbar{
+            width: 0;
+    }
+    .Context{
+        max-height: 95%;
+        overflow: scroll;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .Context h1{
+        font-size:1.25 rem;
+    }
+    .link{
+        min-width: 55%;
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:800px){
+    .link{
+        width: 30%;
+        font-size: 0.8rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="Context">
+        <h1>EVENT NAME</h1>
+        <h3>Event Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum quod ratione quidem sit dolorem eveniet natus inventore fugit impedit iure error consequuntur beatae, obcaecati asperiores odit atque vel nobis?</h3>
+        <div class="listed-item">
+        <pre>
+            Rounds: 
+            Max team of :
+            Have any queries?, Contact us at:
+            Persion 1:
+            Persion 2:
+            <a class="link" href="index.html" class="btn">Alraedy Have a Team?</a>
+        </pre>
+    </div>
+    <!-- <div class="link">
+        <a href="index.html" class="btn">Alraedy Have a Team</a>
+    </div> -->
+    <div class="container">
+        <div class="heading">Your Details</div>
+        <form action="#">
+            <div class="card-details">
+            <div class="card-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="card-box">
+                <span class="details">Email Address</span>
+                <input type="email" placeholder="Enter your Email Id">
+            </div>
+            <div class="card-box">
+                <span class="details">PRN</span>
+                <input type="text" placeholder="Enter your PRN">
+            </div>
+    
+            <div class="card-box">
+                <span class="details">Branch</span>
+                <select id="Select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                    <option value="EXTC">EXTC</option>
+                    <option value="ECS">ECS</option>
+                    <option value="MECH">MECH</option>
+                    <option value="AI & DS">AI & DS</option>
+                    <option value="AI & ML">AI & ML</option>
+                    <option value="CSE(IOT)">CSE(IOT)</option>
+                </select>
+            </div>
+    
+            <div class="card-box">
+                <span class="details">Contact/Whatsapp Number</span>
+                <input type="text" placeholder="Enter your number">
+            </div>
+    
+            <div class="card-box">
+                <span class="details">YEAR</span>
+                <select id="Select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="FE">FE</option>
+                    <option value="SE">SE</option>
+                    <option value="TE">TE</option>
+                    <option value="BE">BE</option>
+                </select>
+         </div>
+    </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    </div>
+
+
+</body>
+</html>
